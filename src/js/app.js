@@ -1,3 +1,4 @@
+require("../scss/style.scss");
 import React, {Component} from 'react';
 import Navigation from './components/Navigation';
 
