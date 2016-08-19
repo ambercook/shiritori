@@ -1,5 +1,14 @@
-var App = function() {
-  return "<h1>Ground control to major Tom</h1>";
-};
+import React, {Component} from 'react';
+import Navigation from './components/Navigation';
 
-module.exports = App;
+class App extends Component {
+  render() {
+    return (
+    	<div className="app">
+	    	<h1>Shiritori</h1>
+	    	<Navigation></Navigation>
+	    </div>
+    );
+  }
+}
+export default App;
