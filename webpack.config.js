@@ -1,5 +1,15 @@
+const path = require('path'),
+    webpack = require('webpack');
+
+const common = {
+   resolve: {
+    extensions: [ '', '/\.jsx?$/' ]
+  }
+}
+
+
 module.exports = {
-    entry: "./src/entry.js",
+    entry: "./src/js/index.js",
     output: {
         path: __dirname,
         filename: "src/bundle.js"

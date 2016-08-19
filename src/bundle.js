@@ -42,9 +42,20 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var app = __webpack_require__(1);
+	document.write(app());
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
-	document.write("It works.");
+	var App = function() {
+	  return "<h1>Ground control to major Tom</h1>";
+	};
+
+	module.exports = App;
 
 /***/ }
 /******/ ]);
