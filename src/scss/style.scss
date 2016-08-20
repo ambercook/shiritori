@@ -1,3 +1,7 @@
-$primary: red;
+@import "variables";
 
+//bulma must be imported only after variables are overwritten
 @import "~bulma/bulma";
+
+@import "typography";
+@import "layout";
