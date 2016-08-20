@@ -40,13 +40,20 @@ class App extends Component {
 					<div className="columns">
 						<div className="column is-two-thirds content is-medium">
 		    			
-							<h2 className="title is-2">Test</h2>
-							<p className="size-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor <strong>incididunt ut</strong> labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation <a href="link">ullamco laboris</a> nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h2 className="title is-2"><span className="ai">藍さん</span> has played: <span className="bold">しりとり</span></h2>
+							
+
+
+							<form>
+
+
+							<label className="label" for="nextMove">Enter a word that starts with <span className="bold">り</span>:</label>
+								
+								<p className="control has-addons">
+									<input className="input is-expanded is-large" type="text" name="nextMove" />
+									<button className="button is-primary is-large">Ready!</button>
+								</p>
+							</form>
 
 						</div>
 
