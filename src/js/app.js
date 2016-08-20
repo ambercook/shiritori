@@ -5,10 +5,15 @@ import Navigation from './components/Navigation';
 class App extends Component {
   render() {
     return (
-    	<div className="app">
-	    	<h1>Shiritori</h1>
-	    	<Navigation></Navigation>
-	    </div>
+
+    	<div class="container">
+		      
+
+	    	<header className="header">
+		    	<h1 class="title">Shiritori</h1>
+		    	<Navigation></Navigation>
+		    </header>
+		</div>
     );
   }
 }
