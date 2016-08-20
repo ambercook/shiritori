@@ -1,7 +1,7 @@
 var path = require('path'),
     webpack = require('webpack'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -36,7 +36,14 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin( './dist/style.css' )
+        new ExtractTextPlugin( './dist/style.css' ),
+        new CopyWebpackPlugin( [
+            {
+                context: 'index.html',
+                from: './',
+                to: './dist'
+            }
+        ])
     ],
 
     watch: true,
