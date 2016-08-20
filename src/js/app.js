@@ -16,7 +16,9 @@ class App extends Component {
 	    			<div className="columns">
 
 	    				<div className="column is-two-thirds">
-		    				<h1 className="title is-1">Shiritori</h1>
+		    				<h1 className="title is-1 logo">
+		    					<a href="/">Shirito<span>ri</span></a>
+		    				</h1>
 		    			</div>
 
 		    			<div className="column">
@@ -36,12 +38,12 @@ class App extends Component {
 
 
 					<div className="columns">
-						<div className="column is-two-thirds">
+						<div className="column is-two-thirds content is-medium">
 		    			
 							<h2 className="title is-2">Test</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							<p className="size-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor <strong>incididunt ut</strong> labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation <a href="link">ullamco laboris</a> nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -66,7 +68,24 @@ class App extends Component {
 			<footer className="footer">
 
 				<div className="container">
-					<p>This is a footer</p>
+
+					<div className="columns">
+
+						<div className="column is-two-thirds">
+							<ul class="nav">
+								<li class="nav-item">
+									<a href="#">About</a>
+								</li>
+								<li class="nav-item">
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+
+						<div className="column has-text-right">
+							<p>made with &hearts;</p>
+						</div>
+					</div>
 				</div>
 
 			</footer>

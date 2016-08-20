@@ -2,8 +2,42 @@ h1, h2, h3, h4, h5 {
 	font-family: $family-display;
 }
 
-h1 {
+.logo {
 	text-transform: lowercase;
-	font-size: 3em;
-	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+
+	a {
+		color: $primary;
+	}
+
+	a:hover {
+		border: none;
+		color: darken( $primary, 20% );
+	}
+
+	span {
+		font-weight: 500;
+		border-bottom: 3px solid $secondary;
+	}
+
+	&:hover span {
+		border-color: darken( $secondary, 20% );
+	}
+}
+
+.title.is-2 {
+	font-weight: 300;
+	color: #51584c;
+}
+
+.content a:not( .button ) {
+	font-weight: bold;
+	border-bottom: 2px solid $secondary;
+}
+
+.content a:not( .button ):hover {
+	color: darken( $primary, 20% );
+	border-color: darken( $secondary, 20% );
 }

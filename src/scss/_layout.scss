@@ -1,3 +1,32 @@
 .column {
 	padding: 40px;
 }
+
+.header {
+	background-color: $white;
+	border-bottom: 5px solid $secondary;
+}
+
+body, html, .footer {
+	background-color: lighten( $secondary, 3% );
+}
+
+.footer {
+
+	padding-top: 0px;
+
+	li {
+		display: inline-block;
+		padding-right: 15px;
+	}
+
+	a:not( .icon ) {
+		color: mix( $primary, $secondary, 85% );
+		border-bottom: 2px solid $secondary;
+
+		&:hover {
+			color: $primary;
+			border-bottom: 2px solid darken( $secondary, 5% );
+		}
+	}
+}
